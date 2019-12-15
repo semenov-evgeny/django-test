@@ -25,7 +25,7 @@ SECRET_KEY = 'a)ut05f!r=5anl$msugxr+p@)baa#si8rwzt52(w4gfp9r_r+d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'semenov']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'anfisa',
+    'blog',
+    'accounts',
+    'articles',
     ]
 
 MIDDLEWARE = [
@@ -121,4 +124,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-
+#AUTH_USER_MODEL = 'APPNAME.User'
