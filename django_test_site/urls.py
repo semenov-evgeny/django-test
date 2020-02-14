@@ -19,7 +19,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.about),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('anfisa/', include('anfisa.urls')),

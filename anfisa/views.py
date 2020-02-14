@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+
 from django.shortcuts import render
 from . import anfisa
 
@@ -27,4 +27,3 @@ def index(request):
 
     # добавьте словарь context третьим аргументом
     return render(request, 'templates/index.html', context)
-
