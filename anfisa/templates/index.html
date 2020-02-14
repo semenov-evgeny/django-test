@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Анфиса</title>
-    <link rel="stylesheet" href="https://code.s3.yandex.net/backend-developer/Anfisa/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="{{ where }}" method="post">
+      {% csrf_token %} 
         Введите запрос:<br><br>
         <input type="text" name="query">
         <input type="submit" value="Спросить"><br><br>

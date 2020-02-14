@@ -4,7 +4,7 @@ from . import anfisa
 
 
 def about(request):
-    return render(request, 'templates/about.html')
+    return render(request, 'about.html')
 
 
 def index(request):
@@ -26,4 +26,4 @@ def index(request):
     }
 
     # добавьте словарь context третьим аргументом
-    return render(request, 'templates/index.html', context)
+    return render(request, 'index.html', context)

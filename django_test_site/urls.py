@@ -19,7 +19,8 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.about),
+    path('', views.index),
+    path('about', views.about),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('anfisa/', include('anfisa.urls')),
